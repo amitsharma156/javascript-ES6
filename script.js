@@ -46,11 +46,51 @@
 
 
 //Blocks and IIFE
-ES-6
-{
-    const a =1;
-    let b= 2;
-    var c =3;
+// ES-6
+// {
+//     const a =1;
+//     let b= 2;
+//     var c =3;
+// }
+// console.log(a+b);
+// console.log(c);
+
+
+//Strings
+
+let firstName = 'John';
+let lastName = 'Smith';
+const yearOfBirth = 1990;
+function calculateAge(year){
+    return 2016 - year;
 }
-console.log(a+b);
-console.log(c);
+
+// ES-5
+console.log('This is '+firstName + ' ' +lastName+ '.He was born in '+ yearOfBirth +'.Today, he is  ' + calculateAge(yearOfBirth)+' years old.');
+
+
+// ES-5
+console.log(`This is ${firstName} ${lastName} . He was born in ${yearOfBirth}. `);
+
+const n = `${firstName} ${lastName}`;
+console.log(n.startsWith('j'));
+console.log(n.endsWith('th'));
+console.log(n.includes('oh'));
+console.log(`${n} `.repeat(5));
+console.log(`${firstName} `.repeat(5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
